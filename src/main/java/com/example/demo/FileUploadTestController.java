@@ -24,7 +24,7 @@ public class FileUploadTestController {
     @PostMapping("/stream/{fileUuid}")
     public ResponseEntity<?> uploadFileStream(@PathVariable String fileUuid, HttpServletRequest request) throws IOException {
 
-        fileIOUtils.saveFile(fileUuid,request);
+        fileIOUtils.saveStreamFile(fileUuid,request);
         return ResponseEntity.ok(true);
     }
 

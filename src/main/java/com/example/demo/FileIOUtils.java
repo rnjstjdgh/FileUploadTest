@@ -25,7 +25,7 @@ public class FileIOUtils {
 	private final StopWatch streamWatch = new StopWatch("streamWatch");
 
 
-	public void saveFile(String fileUuid, HttpServletRequest request) throws IOException{
+	public void saveStreamFile(String fileUuid, HttpServletRequest request) throws IOException{
 		streamWatch.start();
 
 		Path fileDirectoryPath = Paths.get(ROOT_PATH).toAbsolutePath().normalize();
